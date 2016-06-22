@@ -11,11 +11,9 @@ body { margin: 20px; }
 
 
 .i-bahamasmap {
-	background: red;
 	width: 647px;
 	height: 666px;
 	margin: auto;
-	background:url(img/mapcolor.png);
 	position: relative;
 }
 
@@ -27,9 +25,10 @@ body { margin: 20px; }
 	transition:1s;
 }
 
-.map-island.hovermode {
+.i-bahamasmap.hovermode .map-island.hovered {
 	z-index:10;
 	transform: scale(1.5);
+	opacity: 1;
 	cursor: pointer;
 }
 
@@ -42,7 +41,7 @@ white-space: nowrap;
 .map-sub {
 	position: absolute;
 	background-image:url(img/mapcolor.png);
-	//filter: invert(100%);	
 }
 
+.i-bahamasmap.hovermode .map-island { opacity:0.2; }
 
