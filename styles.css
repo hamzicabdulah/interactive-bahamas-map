@@ -20,18 +20,31 @@ body { margin: 20px; }
 }
 
 .map-island {
-	background: rgba(255, 0, 0, 0.5);
 	position: absolute;
 	z-indez:5;
 	top:0;
 	left:0;
-	background-image:url(img/mapcolor.png);
 	transition:1s;
 }
 
-.map-island:hover {
+.map-island.hovermode {
 	z-index:10;
 	transform: scale(1.5);
+	cursor: pointer;
+}
+
+.map-island span { 
+position: absolute;
+top:20px;
+left:-10px;
+z-index:2;
+white-space: nowrap;
+}
+
+.map-sub {
+	position: absolute;
+	background-image:url(img/mapcolor.png);
+	//filter: invert(100%);	
 }
 
 
