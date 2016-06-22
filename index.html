@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="i-bahamasmap">
+<!-- bahamas map goes here -->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="islands.js"></script>
+<script>
+
+var mapdiv = $('.i-bahamasmap');
+
+for(var i=0; i<islands.length; i++)
+{
+	var current = islands[i];
+	console.log( current );
+	current.style.backgroundPosition = '-'+current.style.left + ' -'+current.style.top;
+	var newdiv = $('<div>').addClass('map-island').text( current.name ).css(current.style);
+	mapdiv.append(newdiv);
+}
+</script>
+
+</body>
+</html>

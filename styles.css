@@ -1,0 +1,37 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+
+html, body {
+color: #fff;
+font-family: arial narrow;
+font-size: 16px;
+background: #0A2554;
+}
+
+body { margin: 20px; }
+
+
+.i-bahamasmap {
+	background: red;
+	width: 647px;
+	height: 666px;
+	margin: auto;
+	background:url(img/mapcolor.png);
+	position: relative;
+}
+
+.map-island {
+	background: rgba(255, 0, 0, 0.5);
+	position: absolute;
+	z-indez:5;
+	top:0;
+	left:0;
+	background-image:url(img/mapcolor.png);
+	transition:1s;
+}
+
+.map-island:hover {
+	z-index:10;
+	transform: scale(1.5);
+}
+
+
