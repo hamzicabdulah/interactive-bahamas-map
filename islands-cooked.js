@@ -1,6 +1,32 @@
 var islands = 
 [
     {
+      "name":"Exuma Cays",
+      "boundingbox": {
+          "x": "216",
+          "y": "242",
+          "w": "149",
+          "h": "163",
+          "style": {}
+      },
+      "subsections": [
+          {
+              "x": 216,
+              "y": 242,
+              "w": 52,
+              "h": 80,
+              "style": ""
+          },
+          {
+              "x": 216,
+              "y": 322,
+              "w": 149,
+              "h": 83,
+              "style": ""
+          }
+      ]
+    },
+    {
         "name": "Grand Bahama",
         "boundingbox": {
             "x": "0",
