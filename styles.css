@@ -35,8 +35,6 @@ body { margin: 20px; }
 
 .map-island span { 
 position: absolute;
-top:20px;
-left:-10px;
 z-index:2;
 white-space: nowrap;
 }

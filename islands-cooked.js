@@ -2,6 +2,7 @@ var islands =
 [
     {
       "name":"Exuma Cays",
+      "label": {"x":68,"y":154},
       "boundingbox": {
           "x": "216",
           "y": "242",
@@ -28,6 +29,7 @@ var islands =
     },
     {
         "name": "Grand Bahama",
+        "label": {"x":10,"y":44},
         "boundingbox": {
             "x": "0",
             "y": "31",
@@ -39,6 +41,7 @@ var islands =
     },
     {
         "name": "Abaco",
+        "label": {"x":80,"y":20},
         "boundingbox": {
             "x": "104",
             "y": "8",
@@ -65,6 +68,7 @@ var islands =
     },
     {
         "name": "Andros",
+        "label": {"x":-25,"y":30},
         "boundingbox": {
             "x": "49",
             "y": "192",
@@ -96,6 +100,7 @@ var islands =
     },
     {
         "name": "New Providence",
+        "label": {"x":0,"y":20},
         "boundingbox": {
             "x": "140",
             "y": "208",
@@ -112,6 +117,7 @@ var islands =
     },
     {
         "name": "Eleuthera",
+        "label": {"x":40,"y":0},
         "boundingbox": {
             "x": "212",
             "y": "160",
@@ -143,6 +149,7 @@ var islands =
     },
     {
         "name": "Cat Island",
+        "label": {"x":25,"y":10},
         "boundingbox": {
             "x": "322",
             "y": "249",
@@ -159,6 +166,7 @@ var islands =
     },
     {
         "name": "San Salvador",
+        "label": {"x":30,"y":5},
         "boundingbox": {
             "x": "440",
             "y": "311",
@@ -175,6 +183,7 @@ var islands =
     },
     {
         "name": "Long Island",
+        "label": {"x":37,"y":45},
         "boundingbox": {
             "x": "365",
             "y": "360",
@@ -206,6 +215,7 @@ var islands =
     },
     {
         "name": "Rum Cay",
+        "label": {"x":30,"y":0},
         "boundingbox": {
             "x": "402",
             "y": "355",
@@ -222,6 +232,7 @@ var islands =
     },
     {
         "name": "Crooked Island",
+        "label": {"x":-60,"y":43},
         "boundingbox": {
             "x": "456",
             "y": "446",
@@ -238,6 +249,7 @@ var islands =
     },
     {
         "name": "Mayaguana",
+        "label": {"x":-10,"y":27},
         "boundingbox": {
             "x": "578",
             "y": "487",
@@ -254,6 +266,7 @@ var islands =
     },
     {
         "name": "Inagua",
+        "label": {"x":25,"y":15},
         "boundingbox": {
             "x": "526",
             "y": "587",

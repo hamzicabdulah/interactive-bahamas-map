@@ -56,7 +56,7 @@ for(var i=0; i<islands.length; i++)
 	var regionDiv = $('<div>')
 		.addClass('map-island')
 		.css( xywhToStyle(current.boundingbox) )
-		.html( $('<span>').text( current.name ) );
+		.html( $('<span>').text( current.name ).css('top',current.label.y).css('left',current.label.x) );
 	mapdiv.append(regionDiv);
 	
 	//console.log( current.name +" has "+ current.subsections.length + " sub entries ");
