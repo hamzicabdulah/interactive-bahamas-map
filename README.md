@@ -1,3 +1,3 @@
 # interactive-bahamas-map
 
-http://thinsoldier.github.io/externals/bahamas-map/
+https://thinsoldier.github.io/interactive-bahamas-map/bahamas-map.html
