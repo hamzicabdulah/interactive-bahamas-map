@@ -11,10 +11,13 @@ body { margin: 20px; }
 
 
 .i-bahamasmap {
-	width: 647px;
-	height: 666px;
+	width: 1000px;
+	height: 1295px;
 	margin: auto;
 	position: relative;
+	background-image:url(img/map-white.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .map-island {
@@ -25,9 +28,14 @@ body { margin: 20px; }
 	transition:1s;
 }
 
+.i-bahamasmap.hovermode .map-island { 
+	opacity:0.7;
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+}
+
 .i-bahamasmap.hovermode .map-island.hovered {
 	z-index:10;
-	transform: scale(1.5);
 	opacity: 1;
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
@@ -42,12 +50,13 @@ white-space: nowrap;
 
 .map-sub {
 	position: absolute;
-	background-image:url(img/mapcolor.png);
+	background-image:url(img/map-color.png);
+	opacity:0;
+	transition: 1s;
 }
 
-.i-bahamasmap.hovermode .map-island { 
-	opacity:0.7;
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
+.i-bahamasmap.hovermode .map-island.hovered .map-sub {
+	opacity:1;
 }
+
 
