@@ -1,17 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-<div class="i-bahamasmap">
-<!-- bahamas map goes here -->
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="islands-cooked.js"></script>
-<script>
 
 function makeSubRegion( sub, parent)
 {
@@ -82,7 +69,3 @@ $('.map-sub, .map-island span').hover( function(e){
 		$(e.target).parent().toggleClass('hovered').css('background','transparent');
 		$('.i-bahamasmap').toggleClass('hovermode');
 	});
-</script>
-
-</body>
-</html>
