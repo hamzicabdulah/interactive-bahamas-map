@@ -22,19 +22,13 @@ body { margin: 20px; }
 
 .map-island {
 	position: absolute;
-	z-indez:5;
-	top:0;
-	left:0;
-	transition:1s;
+	z-index:5;
+	top:0; /* gets overruled by js applied styles */
+	left:0;/* gets overruled by js applied styles */
 }
 
-.i-bahamasmap.hovermode .map-island { 
-	opacity:0.7;
-}
-
-.i-bahamasmap.hovermode .map-island.hovered {
+.map-island.hovered {
 	z-index:10;
-	opacity: 1;
 	cursor: pointer;
 }
 
@@ -48,7 +42,7 @@ white-space: nowrap;
 	position: absolute;
 	background-image:url(img/map-color.png);
 	opacity:0;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .i-bahamasmap.hovermode .map-island.hovered .map-sub {
