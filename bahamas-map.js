@@ -95,7 +95,7 @@ for(var i=0; i<islands.length; i++)
 
 // Observe sub-regions to apply hover class to their parent bounding box when they are hovered.
 $('.map-sub, .map-island span').hover( function(e){
-		$(e.target).parent().toggleClass('hovered').css('background','transparent');
+		$(e.target).parent().toggleClass('hovered');
 		$('.i-bahamasmap').toggleClass('hovermode');
 	});
 
