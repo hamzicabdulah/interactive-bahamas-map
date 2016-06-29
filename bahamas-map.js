@@ -88,7 +88,12 @@ for(var i=0; i<islands.length; i++)
 
 	if( infoData[ nameToken ] )
 	{
-		regionDiv.append( infoData[ nameToken ] );
+		var section = infoData[ nameToken ];
+		regionDiv.append( section );
+		if( current.infobox )
+		{
+			$(section).css( 'top',current.infobox.y ).css( 'left',current.infobox.x );
+		}
 	} else { console.warn( 'No Island info section match found for '+current.name ); }
 	
 }

@@ -3,6 +3,7 @@ var islands =
     {
       "name":"Exuma Cays",
       "label": {"x":38,"y":204},
+      "infobox":{"x":"50%","y":"50%"},
       "boundingbox": {
           "x": 350,
           "y": 506,
@@ -39,6 +40,7 @@ var islands =
     {
         "name": "Abaco",
         "label": {"x":120,"y":30},
+			"infobox":{"x":"50%","y":0},
         "boundingbox": {
             "x": "181",
             "y": "155",
@@ -66,6 +68,7 @@ var islands =
     {
         "name": "Andros",
         "label": {"x":-5,"y":55},
+        "infobox":{"x":"50%","y":40},
         "boundingbox": {
             "x": "100",
             "y": "428",
@@ -155,6 +158,7 @@ var islands =
     {
         "name": "Long Island",
         "label": {"x":57,"y":75},
+			"infobox":{"x":"50%","y":20},
         "boundingbox": {
             "x": "573",
             "y": "684",
@@ -194,6 +198,7 @@ var islands =
     {
         "name": "Crooked Island",
         "label": {"x":-60,"y":70},
+			"infobox":{"x":"-300px","y":0},
         "boundingbox": {
             "x": "706",
             "y": "822",
@@ -206,6 +211,7 @@ var islands =
     {
         "name": "Mayaguana",
         "label": {"x":-10,"y":35},
+			"infobox":{"x":"-300px","y":0},
         "boundingbox": {
             "x": "890",
             "y": "884",
@@ -218,6 +224,7 @@ var islands =
     {
         "name": "Inagua",
         "label": {"x":25,"y":15},
+			"infobox":{"x":"-300px","y":0},
         "boundingbox": {
             "x": "808",
             "y": "1031",
