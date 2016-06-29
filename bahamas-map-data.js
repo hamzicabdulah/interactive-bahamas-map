@@ -2,7 +2,7 @@ var islands =
 [
     {
       "name":"Exuma Cays",
-      "label": {"x":68,"y":154},
+      "label": {"x":38,"y":204},
       "boundingbox": {
           "x": 350,
           "y": 506,
@@ -38,7 +38,7 @@ var islands =
     },
     {
         "name": "Abaco",
-        "label": {"x":90,"y":20},
+        "label": {"x":120,"y":30},
         "boundingbox": {
             "x": "181",
             "y": "155",
@@ -65,7 +65,7 @@ var islands =
     },
     {
         "name": "Andros",
-        "label": {"x":-25,"y":30},
+        "label": {"x":-5,"y":55},
         "boundingbox": {
             "x": "100",
             "y": "428",
@@ -104,7 +104,7 @@ var islands =
     },
     {
         "name": "Eleuthera",
-        "label": {"x":40,"y":0},
+        "label": {"x":40,"y":86},
         "boundingbox": {
             "x": "343",
             "y": "384",
@@ -130,7 +130,7 @@ var islands =
     },
     {
         "name": "Cat Island",
-        "label": {"x":25,"y":10},
+        "label": {"x":35,"y":15},
         "boundingbox": {
             "x": "508",
             "y": "528",
@@ -142,7 +142,7 @@ var islands =
     },
     {
         "name": "San Salvador",
-        "label": {"x":30,"y":5},
+        "label": {"x":40,"y":5},
         "boundingbox": {
             "x": "684",
             "y": "621",
@@ -154,7 +154,7 @@ var islands =
     },
     {
         "name": "Long Island",
-        "label": {"x":37,"y":45},
+        "label": {"x":57,"y":75},
         "boundingbox": {
             "x": "573",
             "y": "684",
@@ -181,7 +181,7 @@ var islands =
     },
     {
         "name": "Rum Cay",
-        "label": {"x":30,"y":0},
+        "label": {"x":50,"y":10},
         "boundingbox": {
             "x": "619",
             "y": "677",
