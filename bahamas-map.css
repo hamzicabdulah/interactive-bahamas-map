@@ -49,4 +49,31 @@ white-space: nowrap;
 	opacity:1;
 }
 
+.map-island-info {
+pointer-events: none;
+opacity: 0;
+transition: 1s;
+position: absolute;
+top:0px;
+left: 100%;
+width: 300px;
+background: rgba(10, 37, 84, 0.79);
+padding: 10px;
+}
+
+.map-island.hovered .map-island-info {
+opacity:1;
+}
+
+.map-island-info header {
+
+}
+
+.map-island-info header a {
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+white-space: nowrap;
+}
 
