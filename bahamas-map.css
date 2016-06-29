@@ -32,6 +32,10 @@ body { margin: 20px; }
 	cursor: pointer;
 }
 
+.map-island.hovered * {
+	cursor: pointer;
+}
+
 .map-island span { 
 position: absolute;
 z-index:2;
@@ -69,6 +73,7 @@ padding: 10px;
 }
 
 .map-island.hovered .map-island-info {
+pointer-events: all;
 opacity:1;
 }
 
@@ -84,3 +89,11 @@ font-weight: bold;
 white-space: nowrap;
 }
 
+.map-island-info button {
+display:block;
+margin: 10px auto 0 auto;
+font-size: 14px;
+border: none;
+border-radius: 4px;
+padding: 5px;
+}
