@@ -1,3 +1,6 @@
+//-----------------------------
+// Utilities for building the map
+//-----------------------------
 
 
 function makeSubRegion( sub, parent)
@@ -38,6 +41,11 @@ function tokenizeName( text )
 	return text.toLowerCase().replace(' ','_');
 }
 
+
+//-----------------------------
+// Procedure for building the map from the basic html and map data.
+//-----------------------------
+
 var mapdiv = $('.i-bahamasmap');
 var infoSections = $('.i-bahamasmap section');
 
@@ -61,7 +69,7 @@ for(var i=0; i<islands.length; i++)
 	var regionDiv = $('<div>')
 		.addClass('map-island')
 		.css( xywhToStyle(current.boundingbox) )
-		.html( $('<span>').text( current.name ).css('top',current.label.y).css('left',current.label.x) );
+		.html( $('<span class="map-island-label">').text( current.name ).css('top',current.label.y).css('left',current.label.x) );
 	mapdiv.append(regionDiv);
 	
 	//console.log( current.name +" has "+ current.subsections.length + " sub entries ");
@@ -89,6 +97,9 @@ for(var i=0; i<islands.length; i++)
 	if( infoData[ nameToken ] )
 	{
 		var section = infoData[ nameToken ];
+		var href = $(section).find('a')[0].href;
+		$(section).find('button').wrapInner('<a href="'+href+'">');
+		
 		regionDiv.append( section );
 		if( current.infobox )
 		{
@@ -98,15 +109,49 @@ for(var i=0; i<islands.length; i++)
 	
 }
 
-// Observe sub-regions to apply hover class to their parent bounding box when they are hovered.
-$('.map-sub, .map-island span, .map-island-info').hover( function(e){
-		$(e.target).parent().toggleClass('hovered');
-		$('.i-bahamasmap').toggleClass('hovermode');
-	});
 
-// Observer island regions to go to the url in their info box if anywere within the region is clicked.
-$('.map-island').click( function(e){
+//-----------------------------
+// Add interactive behaviours to the map.
+//-----------------------------
+
+// Observe sub-regions to apply hover class to their parent bounding box when they are hovered.
+$('.map-sub, .map-island-label').hover( 
+	function(e) { $(e.target).parent().addClass('hovered'); } ,
+	function(e) { $(e.target).parent().removeClass('hovered'); }
+);
+
+
+// When an island is clicked, close all islands then open the clicked island.
+$('.map-sub, .map-island-label').click( function(e){
+	e.stopPropagation();
 	e.preventDefault();
-	var href = $(e.target).closest('.map-island').find('a').attr('href');
-	window.location.href = href;
+	closeAllIslands();
+	openIsland( $(e.target).parent() );
+	$('.i-bahamasmap').addClass('hovermode');
 });
+
+
+// Close all islands when the map is clicked anywhere that's not an actual island.
+$('.i-bahamasmap').click( function(e){
+	closeAllIslands();
+	//console.log(' fullmap clicked ', this );
+});
+
+function closeAllIslands()
+{
+	$('.map-island').removeClass('js-open').addClass('js-closed');
+}
+
+function openIsland( ele )
+{
+	$(ele).removeClass('js-closed');
+	$(ele).addClass('js-open');
+}
+
+// Observe island regions to go to the url in their info box if anywhere within the region is clicked.
+// $('.map-island-info').click( function(e){
+// 	e.preventDefault();
+// 	var href = $(e.target).closest('.map-island').find('a').attr('href');
+// 	window.location.href = href;
+// });
+

@@ -1,14 +1,15 @@
-* { box-sizing: border-box; margin:0; padding:0; }
+/* For the demo page only. Probably don't want these on the page you integrate the map into */
 
-html, body {
-color: #fff;
-font-family: arial narrow;
-font-size: 16px;
-background: #0A2554;
-}
-
+html, body { background-color: #0A2554; }
 body { margin: 20px; }
 
+
+
+/*----------------------------- */
+/* Main Map Styles */
+/* Many necessary for the JS to function */
+
+* { box-sizing: border-box; margin:0; padding:0; }
 
 .i-bahamasmap {
 	width: 1000px;
@@ -18,6 +19,8 @@ body { margin: 20px; }
 	background-image:url(img/map-white.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-color: #0A2554;
+	color: #fff;
 }
 
 .map-island {
@@ -27,9 +30,10 @@ body { margin: 20px; }
 	left:0;/* gets overruled by js applied styles */
 }
 
-.map-island.hovered {
+.map-island.hovered, .map-island.js-open {
 	z-index:10;
 	cursor: pointer;
+	//background: rgba(255, 215, 0, 0.13);
 }
 
 .map-island.hovered * {
@@ -44,7 +48,7 @@ opacity: 1;
 transition: 5s;
 }
 
-.i-bahamasmap.hovermode span {
+.map-island.js-open span {
 opacity:0;
 transition: 1s;
 }
@@ -56,9 +60,11 @@ transition: 1s;
 	transition: 0.3s;
 }
 
-.i-bahamasmap.hovermode .map-island.hovered .map-sub {
+/* Show island shape hover state when hovered or when "open"  */
+.map-island.hovered .map-sub, .map-island.js-open .map-sub {
 	opacity:1;
 }
+
 
 .map-island-info {
 pointer-events: none;
@@ -73,21 +79,40 @@ background: rgba(10, 37, 84, 0.79);
 padding: 10px;
 }
 
-.map-island.hovered .map-island-info {
+
+.map-island.js-open .map-island-info {
 pointer-events: all;
 opacity:1;
 }
 
-.map-island-info header {
-
+.map-island.js-open .map-island-info * {
+pointer-events: all;
 }
 
+
+/* ----------------------------- */
+/* Purely decorative styles that should have no effect on JS behaviour */
+/* Feel free to modify. */
+/* ----------------------------- */
+
+.i-bahamasmap {
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+}
+
+.map-island-info a { text-decoration: none; }
+
 .map-island-info header a {
-text-decoration: none;
-color: #fff;
+color: gold;
 font-size: 20px;
 font-weight: bold;
 white-space: nowrap;
+letter-spacing: 0.15em;
+transition: 1s;
+}
+
+.map-island-info header a:hover {
+letter-spacing: 0.4em;
 }
 
 .map-island-info button {
@@ -97,4 +122,13 @@ font-size: 14px;
 border: none;
 border-radius: 4px;
 padding: 5px;
+width: 30%;
+transition: 0.5s;
 }
+
+.map-island-info button:hover {
+background: gold;
+cursor: pointer;
+width: 100%;
+}
+
