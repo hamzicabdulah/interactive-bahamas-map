@@ -62,6 +62,7 @@ transition: 1s;
 
 .map-island-info {
 pointer-events: none;
+z-index:2;
 opacity: 0;
 transition: 1s;
 position: absolute;
