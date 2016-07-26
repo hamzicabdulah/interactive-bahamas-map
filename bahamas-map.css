@@ -115,18 +115,20 @@ transition: 1s;
 letter-spacing: 0.4em;
 }
 
-.map-island-info button {
+.map-island-info a.button {
 display:block;
 margin: 10px auto 0 auto;
 font-size: 14px;
+text-align: center;
 border: none;
 border-radius: 4px;
 padding: 5px;
 width: 30%;
 transition: 0.5s;
+background: #fff;
 }
 
-.map-island-info button:hover {
+.map-island-info a.button:hover {
 background: gold;
 cursor: pointer;
 width: 100%;

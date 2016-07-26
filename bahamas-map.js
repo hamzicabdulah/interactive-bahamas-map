@@ -98,7 +98,7 @@ for(var i=0; i<islands.length; i++)
 	{
 		var section = infoData[ nameToken ];
 		var href = $(section).find('a')[0].href;
-		$(section).find('button').wrapInner('<a href="'+href+'">');
+		$(section).find('a.button').attr('href',href);
 		
 		regionDiv.append( section );
 		if( current.infobox )
