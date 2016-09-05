@@ -1,3 +1,1 @@
-# interactive-bahamas-map
-
-https://thinsoldier.github.io/interactive-bahamas-map/bahamas-map.html
+This is a css test case for a bug in Firefox and Chrome (not Safari) where nested elements that have absolute positioning and/or z-index and use mix-blend-mode appear with a black background instead of the blending mode being applied properly.

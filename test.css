@@ -1,0 +1,19 @@
+html { background-color: #0A2554; }
+
+.wrapper {
+  z-index:2;
+  position: absolute;
+}
+
+.demo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  filter: invert(100%);
+  mix-blend-mode: screen;
+  background: transparent url("http://www.supercoloring.com/sites/default/files/styles/coloring_full/public/cif/2015/01/swordfish-jumping-out-of-water-coloring-pages.png") repeat scroll 0% 0% / cover ; 
+}
+
+.wrapped { left: 350px; }
