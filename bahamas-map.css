@@ -31,9 +31,15 @@ body { margin: 20px; }
 }
 
 .map-island.hovered, .map-island.js-open {
-	z-index:10;
 	cursor: pointer;
 	//background: rgba(255, 215, 0, 0.13);
+}
+
+.map-island.hovered {
+	z-index:10;
+}
+.map-island.js-open {
+	z-index:11;
 }
 
 .map-island.hovered * {
