@@ -26,18 +26,6 @@ var islands =
       ]
     },
     {
-        "name": "Grand Bahama",
-        "label": {"x":80,"y":50},
-        "boundingbox": {
-            "x": "25",
-            "y": "190",
-            "w": "189",
-            "h": "63",
-            "style": {}
-        },
-        "subsections": []
-    },
-    {
         "name": "Abaco",
         "label": {"x":120,"y":30},
 			"infobox":{"x":"50%","y":0},
@@ -64,6 +52,18 @@ var islands =
 					"style": ""
             }
         ]
+    },
+    {
+        "name": "Grand Bahama",
+        "label": {"x":80,"y":50},
+        "boundingbox": {
+            "x": "25",
+            "y": "190",
+            "w": "189",
+            "h": "63",
+            "style": {}
+        },
+        "subsections": []
     },
     {
         "name": "Andros",
