@@ -55,7 +55,7 @@ var islands =
     },
     {
         "name": "Grand Bahama",
-        "label": {"x":80,"y":50},
+        "label": {"x":70,"y":60},
         "boundingbox": {
             "x": "25",
             "y": "190",
@@ -67,7 +67,7 @@ var islands =
     },
     {
         "name": "Andros",
-        "label": {"x":-5,"y":55},
+        "label": {"x":-15,"y":55},
         "infobox":{"x":"50%","y":40},
         "boundingbox": {
             "x": "100",
@@ -95,7 +95,7 @@ var islands =
     },
     {
         "name": "New Providence",
-        "label": {"x":0,"y":30},
+        "label": {"x":-10,"y":-10},
         "boundingbox": {
             "x": "240",
             "y": "460",
@@ -197,7 +197,7 @@ var islands =
     },
     {
         "name": "Crooked Island",
-        "label": {"x":-60,"y":70},
+        "label": {"x":-65,"y":65},
 			"infobox":{"x":"-300px","y":0},
         "boundingbox": {
             "x": "706",
@@ -210,7 +210,7 @@ var islands =
     },
     {
         "name": "Mayaguana",
-        "label": {"x":-10,"y":35},
+        "label": {"x":0,"y":40},
 			"infobox":{"x":"-300px","y":0},
         "boundingbox": {
             "x": "890",
